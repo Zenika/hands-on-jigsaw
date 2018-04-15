@@ -1,0 +1,64 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Kotlin template
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+### Eclipse template
+
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+.gradle
+
+.idea
+*/out/
+# Gradle Wrapper
+!gradle/wrapper
+!gradle/wrapper/gradle-wrapper.jar
+
+# Gradle 
+*/build/
+.gradle/
+
+# Idea
+*/out/
+out/
+.idea/
+
+# VScode
+.vscode/
+*/.classpath
+*/.project
+
+
+
+# Code Recommenders
+.recommenders/
+
+### JEnv template
+# JEnv local Java version configuration file
+.java-version
+
+# Used by previous versions of JEnv
+.jenv-version
