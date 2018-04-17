@@ -114,12 +114,19 @@ public class Application extends AbstractVerticle {
 
 
         router.route().handler(
-                StaticHandler.create("webapp", this.getClass().getClassLoader())
+                StaticHandler.create("webapp", this.getClass().getModule().getClassLoader())
                         .setIndexPage("index.html")
                         .setCachingEnabled(dev)
                         .setFilesReadOnly(true)
         );
-        router.route().handler(event -> event.reroute("index.html")); // No not found => redirect to index.html
+        router.route().handler(event -> {
+            if ("/index.html".equals(event.normalisedPath())){
+                logger.severe("Files are not accessibles, play again");
+                event.fail(500); // prevent from loop
+            }
+            else
+                event.reroute("index.html");
+        }); // No not found => redirect to index.html
 
 
         vertx.createHttpServer()
@@ -195,7 +202,6 @@ public class Application extends AbstractVerticle {
         sb.append("\n}");
         return sb.toString();
     }
-
 
 
     private void handleCharacters(RoutingContext routingContext) {

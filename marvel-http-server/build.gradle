@@ -2,10 +2,12 @@ import java.util.regex.Matcher
 
 plugins {
     id 'application'
+    id "com.zyxist.chainsaw" version "0.3.1"
 }
 
 
 mainClassName = "org.zenika.handson.jigsaw.http.Application"
+//mainClassName = "org.zenika.handson.jigsaw.http/org.zenika.handson.jigsaw.http.Application"
 
 
 dependencies {
@@ -21,4 +23,13 @@ dependencies {
 
 run {
     jvmArgs = [ "-Dport=8080", "-Ddev=true"]
+    doFirst {
+
+        copy {
+            // can't access to file in resources directory => copy to java classes directory
+            from 'src/main/resources'
+            into "$buildDir/classes/java/main/"
+        }
+    }
 }
+

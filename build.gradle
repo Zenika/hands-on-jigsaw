@@ -43,9 +43,16 @@ subprojects {
 
         test {
             useJUnitPlatform()
-            environment "MARVEL", "CLASSPATH"
-            environment "HTTP", "CLASSPATH"
+            environment "MARVEL", "JIGSAW"
+            environment "HTTP", "JIGSAW"
 
+            doFirst {
+                // can't access to file in resources directory => copy to java classes directory
+                copy {
+                    from "$projectDir/src/main/resources"
+                    into "$buildDir/classes/java/main/"
+                }
+            }
 
             // listen to events in the test execution lifecycle
             beforeTest { descriptor ->

@@ -40,7 +40,7 @@ public class InMemoryCharactersApi implements CharactersApi {
     // curl & jq & bash have super power too
     private static Map<Integer, MarvelCharacter> loadDataFromFile() {
 
-        try (InputStream is = InMemoryCharactersApi.class.getClassLoader().getResourceAsStream("data/all.txt");
+        try (InputStream is = InMemoryCharactersApi.class.getModule().getResourceAsStream("data/all.txt");
              InputStreamReader isr = new InputStreamReader(is);
              BufferedReader br = new BufferedReader(isr)) {
             return br.lines().map(lineToCharacter).collect(Collectors.toMap(c -> c.id, c -> c));
