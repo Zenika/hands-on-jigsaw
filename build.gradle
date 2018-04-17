@@ -41,7 +41,6 @@ subprojects {
             }
         }
 
-
         compileJava {
             doFirst {
                 options.compilerArgs = [
@@ -115,11 +114,9 @@ subprojects {
             }
 
             onOutput { descriptor, event ->
-                logger.lifecycle("Test: " + descriptor + " produced standard out/err: " + event.message)
+                logger.lifecycle("Test: " + descriptor + " produced standard out/err: " + event.message )
             }
         }
 
     }
-
-
 }

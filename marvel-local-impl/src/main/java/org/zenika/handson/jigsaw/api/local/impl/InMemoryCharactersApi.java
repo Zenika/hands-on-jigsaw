@@ -119,11 +119,14 @@ public class InMemoryCharactersApi implements CharactersApi {
 
             switch (type) {
                 case LARGE:
-                    return this.getClass().getClassLoader().getResource("img/".concat(imageId).concat(".").concat(extension));
+//                    return this.getClass().getClassLoader().getResource("img/".concat(imageId).concat(".").concat(extension));
+                    return img.PlaceHolder.class.getModule().getClassLoader().getResource("img/".concat(imageId).concat(".").concat(extension));
                 case PORTRAIT_XLARGE:
-                    return this.getClass().getClassLoader().getResource("img/".concat(imageId).concat("_portrait_xlarge.").concat(extension));
+//                    return this.getClass().getClassLoader().getResource("img/".concat(imageId).concat("_portrait_xlarge.").concat(extension));
+                    return img.PlaceHolder.class.getModule().getClassLoader().getResource("img/".concat(imageId).concat("_portrait_xlarge.").concat(extension));
                 case STANDARD_XLARGE:
-                    return this.getClass().getClassLoader().getResource("img/".concat(imageId).concat("_standard_xlarge.").concat(extension));
+//                    return this.getClass().getClassLoader().getResource("img/".concat(imageId).concat("_standard_xlarge.").concat(extension));
+                    return img.PlaceHolder.class.getModule().getClassLoader().getResource("img/".concat(imageId).concat("_standard_xlarge.").concat(extension));
                 default:
                     // should not arrive
                     throw new DoctorStrangeException("Strange, this type of image is not supported");

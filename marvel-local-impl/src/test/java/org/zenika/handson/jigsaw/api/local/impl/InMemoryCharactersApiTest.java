@@ -15,7 +15,8 @@ import java.util.List;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
-import static org.junit.jupiter.api.condition.JRE.*;
+import static org.junit.jupiter.api.condition.JRE.JAVA_10;
+import static org.junit.jupiter.api.condition.JRE.JAVA_9;
 
 
 public class InMemoryCharactersApiTest {
@@ -89,7 +90,7 @@ public class InMemoryCharactersApiTest {
     @Test
     @DisabledIfEnvironmentVariable(named = "MARVEL", matches = "JIGSAW")
     @DisplayName("With classpath you could dynamic invoke what you want")
-    public void shouldFindClassWithClasspath() throws IllegalAccessException, ClassNotFoundException {
+    public void shouldFindClassWithJava8() throws IllegalAccessException, ClassNotFoundException {
         MethodHandles.Lookup lookup = MethodHandles.lookup();
         assertNotNull(lookup.findClass("java.sql.Timestamp"));
 

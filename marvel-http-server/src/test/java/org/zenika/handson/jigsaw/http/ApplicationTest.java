@@ -7,7 +7,6 @@ import feign.Param;
 import feign.RequestLine;
 import feign.Response;
 import feign.gson.GsonDecoder;
-import io.vertx.core.Vertx;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
@@ -32,9 +31,11 @@ class ApplicationTest {
     static void setUp() {
         application = new Application(3030, false);
         Runnable task = () -> {
-            Vertx vertx = Vertx.vertx();
-
-            vertx.deployVerticle(application);
+            try {
+                application.start();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         };
         new Thread(task).start();
         infoApi = Feign.builder()
@@ -48,18 +49,11 @@ class ApplicationTest {
                 .target(ImageAPI.class, "http://localhost:3030");
 
 
-//        try {
-//            Thread.sleep(50);
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
-
     }
 
     @AfterAll
-    static void tearDown() throws Exception {
-//        application.getVertx().close();
-        application.stop();
+    static void tearDown() {
+        application.stop(0);
     }
 
     @Test
@@ -76,7 +70,7 @@ class ApplicationTest {
     void infoModulesShouldBeNotEmpty() {
         Info info = infoApi.getInfo();
 
-        assertTrue(Integer.valueOf(info.javaSpecificationVersion) >= 9);
+        assertTrue(info.javaSpecificationVersion >= 9);
         assertNotNull(info.modules);
         assertTrue(!info.modules.isEmpty());
 
@@ -115,7 +109,7 @@ class ApplicationTest {
     }
 
     interface InfoAPI {
-        @RequestLine("GET /api/info")
+        @RequestLine("GET /api/infos")
         Info getInfo();
     }
 
@@ -130,7 +124,7 @@ class ApplicationTest {
     }
 
     static class Info {
-        String javaSpecificationVersion;
+        int javaSpecificationVersion;
         String javaVersion;
         String javaVendor;
         String moduleName;
