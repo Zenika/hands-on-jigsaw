@@ -1,0 +1,16 @@
+plugins {
+    id 'java-library'
+}
+
+
+dependencies {
+    api project(':api-marvel')
+    compile project(':fuzzywuzzy')
+
+}
+
+
+
+
+
+

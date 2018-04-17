@@ -1,0 +1,24 @@
+import java.util.regex.Matcher
+
+plugins {
+    id 'application'
+}
+
+
+mainClassName = "org.zenika.handson.jigsaw.http.Application"
+
+
+dependencies {
+
+    implementation project(':api-marvel')
+
+    compile 'io.vertx:vertx-web:3.5.1'
+    
+    runtimeOnly project(':marvel-local-impl')
+
+}
+
+
+run {
+    jvmArgs = [ "-Dport=8080", "-Ddev=false"]
+}
