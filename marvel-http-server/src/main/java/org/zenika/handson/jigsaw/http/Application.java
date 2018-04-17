@@ -14,7 +14,6 @@ import io.vertx.ext.web.handler.StaticHandler;
 import org.zenika.handson.jigsaw.api.CharactersApi;
 import org.zenika.handson.jigsaw.api.MarvelCharacter;
 
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.lang.invoke.MethodHandle;
@@ -23,7 +22,10 @@ import java.lang.invoke.MethodType;
 import java.net.URL;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
-import java.util.*;
+import java.util.List;
+import java.util.Optional;
+import java.util.ServiceLoader;
+import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.stream.Collector;
@@ -41,7 +43,7 @@ public class Application extends AbstractVerticle {
     private static final Charset UTF8_CHARSET = StandardCharsets.UTF_8;
     private static final Logger logger = Logger.getLogger(Application.class.getCanonicalName());
     @SuppressWarnings("ConstantConditions")
-    private static final CharactersApi charactersApi = ServiceLoader.load(CharactersApi.class).iterator().next();
+    private static final CharactersApi charactersApi = ServiceLoader.load(CharactersApi.class).findFirst().get();
     private static String info = null;
     private final int port;
     private final boolean dev;
@@ -153,14 +155,14 @@ public class Application extends AbstractVerticle {
         if (!javaSpecificationVersion.startsWith("1.")) {
             try {
                 MethodHandles.Lookup lookup = MethodHandles.lookup();
-                Class<?> moduleLayerClazz = Class.forName("java.lang.ModuleLayer");
+                Class<?> moduleLayerClazz = lookup.findClass("java.lang.ModuleLayer");
                 MethodHandle mhBoot = lookup.findStatic(moduleLayerClazz, "boot", MethodType.methodType(moduleLayerClazz));
                 Object moduleLayer = mhBoot.invoke();
 
                 MethodHandle mhModules = lookup.findVirtual(moduleLayer.getClass(), "modules", MethodType.methodType(Set.class));
                 final Set<?> modules = (Set) mhModules.invoke(moduleLayer);
 
-                Class<?> moduleClazz = Class.forName("java.lang.Module");
+                Class<?> moduleClazz = lookup.findClass("java.lang.Module");
                 MethodHandle mhGetModule = lookup.findVirtual(moduleClazz.getClass(), "getModule", MethodType.methodType(moduleClazz));
                 Object module = mhGetModule.invoke(Application.this.getClass());
 
@@ -218,13 +220,10 @@ public class Application extends AbstractVerticle {
                 .putHeader(HttpHeaders.CONTENT_TYPE, "application/json");
 
 
-        if (character.isPresent()) {
-            final MarvelCharacter marvelCharacter = character.get();
-            response.end(marvelCharacterToJson(marvelCharacter).encodePrettily());
-        } else {
-            response.setStatusCode(404)
-                    .end("{\"message\":\"Not Found\"}");
-        }
+        character.ifPresentOrElse(
+                marvelCharacter -> response.end(marvelCharacterToJson(marvelCharacter).encodePrettily()),
+                () -> response.setStatusCode(404).end("{\"message\":\"Not Found\"}")
+        );
 
 
     }
@@ -236,48 +235,36 @@ public class Application extends AbstractVerticle {
         final MarvelCharacter.ImageType imageType = MarvelCharacter.ImageType.find(type);
         final Optional<MarvelCharacter> character = charactersApi.find(Integer.valueOf(id));
         final HttpServerResponse response = routingContext.response();
-        if (character.isPresent()) {
-            final MarvelCharacter marvelCharacter = character.get();
-            final URL image = marvelCharacter.getImage(imageType);
-            try (InputStream in = image.openStream()) {
-                final String filename = marvelCharacter.imageId.concat(".").concat(marvelCharacter.extension);
-                final byte[] bytes = readAllBytes(in);
-                response.putHeader(HttpHeaders.CONTENT_TYPE, "image/".concat(marvelCharacter.extension))
-                        .putHeader("filename", filename)
-                        .putHeader(getCacheHeaders().key, getCacheHeaders().value)
-                        .putHeader(HttpHeaders.CONTENT_LENGTH, String.valueOf(bytes.length))
-                        .setStatusCode(200)
-                        .end(Buffer.buffer(bytes));
+        character.ifPresentOrElse(
+                marvelCharacter -> {
+                    final URL image = marvelCharacter.getImage(imageType);
+                    try (InputStream in = image.openStream()) {
+                        final String filename = marvelCharacter.imageId.concat(".").concat(marvelCharacter.extension);
+                        final byte[] bytes = in.readAllBytes();
+                        response.putHeader(HttpHeaders.CONTENT_TYPE, "image/".concat(marvelCharacter.extension))
+                                .putHeader("filename", filename)
+                                .putHeader(getCacheHeaders().key, getCacheHeaders().value)
+                                .putHeader(HttpHeaders.CONTENT_LENGTH, String.valueOf(bytes.length))
+                                .setStatusCode(200)
+                                .end(Buffer.buffer(bytes));
 
-            } catch (IOException ex) {
-                logger.log(Level.WARNING, ex.getMessage(), ex);
-            }
-        } else {
-            response.putHeader(HttpHeaders.CONTENT_TYPE, "application/json")
-                    .setStatusCode(404)
-                    .end("{\"message\":\"Not Found\"}");
-        }
+                    } catch (IOException ex) {
+                        logger.log(Level.WARNING, ex.getMessage(), ex);
+                    }
+                }, () -> response.putHeader(HttpHeaders.CONTENT_TYPE, "application/json")
+                        .setStatusCode(404)
+                        .end("{\"message\":\"Not Found\"}")
+        );
 
 
     }
 
-    private byte[] readAllBytes(InputStream in) throws IOException {
-        ByteArrayOutputStream buffer = new ByteArrayOutputStream();
-        int nRead;
-        byte[] data = new byte[1024];
-        while ((nRead = in.read(data, 0, data.length)) != -1) {
-            buffer.write(data, 0, nRead);
-        }
-
-        buffer.flush();
-        return buffer.toByteArray();
-    }
 
     private Header<? extends CharSequence, List<CharSequence>> getCacheHeaders() {
         if (dev) {
-            return new Header<>(HttpHeaders.CACHE_CONTROL, Arrays.asList("no-cache"));
+            return new Header<>(HttpHeaders.CACHE_CONTROL, List.of("no-cache"));
         } else {
-            return new Header<>(HttpHeaders.CACHE_CONTROL, Arrays.asList(new String[]{"public", "max-age=600"}));
+            return new Header<>(HttpHeaders.CACHE_CONTROL, List.of("public", "max-age=600"));
         }
     }
 

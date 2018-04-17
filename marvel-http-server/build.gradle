@@ -20,5 +20,5 @@ dependencies {
 
 
 run {
-    jvmArgs = [ "-Dport=8080", "-Ddev=false"]
+    jvmArgs = [ "-Dport=8080", "-Ddev=true"]
 }

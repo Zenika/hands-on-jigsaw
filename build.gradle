@@ -7,8 +7,8 @@
 subprojects {
 
     afterEvaluate {
-        sourceCompatibility = 8
-        targetCompatibility = 8
+        sourceCompatibility = 9
+        targetCompatibility = 9
 
         repositories {
             jcenter()
