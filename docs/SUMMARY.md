@@ -1,5 +1,6 @@
 # Summary
 
+* [Introduction](./README.md)
 * [Chapter 1 - Suit up!](./CHAPTER_1.md)
 * [Chapter 2 - Warm up](./CHAPTER_2.md)
 * [Chapter 3 - Bringing justice and jigsaw into the world](./CHAPTER_3.md)
