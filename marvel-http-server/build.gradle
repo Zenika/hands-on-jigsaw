@@ -2,12 +2,10 @@ import java.util.regex.Matcher
 
 plugins {
     id 'application'
-    id "com.zyxist.chainsaw" version "0.3.1"
 }
 
 
-mainClassName = "org.zenika.handson.jigsaw.http.Application"
-//mainClassName = "org.zenika.handson.jigsaw.http/org.zenika.handson.jigsaw.http.Application"
+mainClassName = "org.zenika.handson.jigsaw.http/org.zenika.handson.jigsaw.http.Application"
 
 
 dependencies {

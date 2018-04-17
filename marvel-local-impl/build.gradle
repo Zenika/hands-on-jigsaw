@@ -1,10 +1,5 @@
 plugins {
     id 'java-library'
-    id "com.zyxist.chainsaw" version "0.3.1"
-}
-
-javaModule.hacks {
-    exports('org.zenika.handson.jigsaw.api.local.impl', 'org.zenika.handson.jigsaw.api.local.impl', 'org.junit.platform.commons')
 }
 
 dependencies {

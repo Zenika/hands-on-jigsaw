@@ -1,5 +1,4 @@
 plugins {
     id 'java-library'
-    id "com.zyxist.chainsaw" version "0.3.1"
 }
 
