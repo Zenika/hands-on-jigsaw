@@ -36,6 +36,8 @@ docker pull louiznk/marvel:10-debian
 Rendez-vous sur le projet récupéré au chapitre 1 et déplacez-vous sur la branche `j8-vertx`.
 
 ```
+git add .
+git commit -m "feat: CHAPTER 2"
 git checkout j8-vertx
 ```
 
@@ -76,6 +78,7 @@ L'application doit fonctionner en mode classpath avec Java 9 (mais pas Java 8).
 sdk use java <JAVA_9_VERSION>
 ./gradlew check run
 ```
+
 Retournez sur la page [infos](http://localhost:8080/infos) et vous verrez les modules du JDK qui sont "chargés" (et toujours pas de module name).
 
 ## Modularisation de l'application: s'occuper du menu fretin.
