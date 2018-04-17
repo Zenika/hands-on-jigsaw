@@ -2,6 +2,8 @@ plugins {
     id 'java-library'
 }
 
+ext.moduleName = "org.zenika.handson.jigsaw.api.local.impl"
+
 dependencies {
     api project(':api-marvel')
     compile project(':fuzzywuzzy')

@@ -4,25 +4,19 @@ plugins {
     id 'application'
 }
 
-
-mainClassName = "org.zenika.handson.jigsaw.http/org.zenika.handson.jigsaw.http.Application"
-
-
-dependencies {
-
-    implementation project(':api-marvel')
-
-    compile 'io.vertx:vertx-web:3.5.1'
-    
-    runtimeOnly project(':marvel-local-impl')
-
-}
+ext.moduleName = "org.zenika.handson.jigsaw.http"
+mainClassName = "$moduleName/org.zenika.handson.jigsaw.http.Application"
 
 
 run {
-    jvmArgs = [ "-Dport=8080", "-Ddev=true"]
+    inputs.property("moduleName", moduleName)
     doFirst {
-
+        jvmArgs = [
+                '--module-path', classpath.asPath,
+                '-Dport=8080', '-Ddev=true',
+                '--module', mainClassName // use module instead of classpath
+        ]
+        classpath = files()
         copy {
             // can't access to file in resources directory => copy to java classes directory
             from 'src/main/resources'
@@ -31,3 +25,35 @@ run {
     }
 }
 
+
+
+startScripts {
+    inputs.property("moduleName", moduleName)
+    doFirst {
+        classpath = files()
+        defaultJvmOpts = [
+                '--module-path', 'APP_HOME_LIBS', // Multi plateform replace in doLast
+                '-Dport=8080', '-Ddev=false',
+                '--module', mainClassName
+        ]
+    }
+    doLast{
+        def bashFile = new File(outputDir, applicationName)
+        String bashContent = bashFile.text
+        bashFile.text = bashContent.replaceFirst('APP_HOME_LIBS', Matcher.quoteReplacement('$APP_HOME/lib'))
+
+        def batFile = new File(outputDir, applicationName + ".bat")
+        String batContent = batFile.text
+        batFile.text = batContent.replaceFirst('APP_HOME_LIBS', Matcher.quoteReplacement('%APP_HOME%\\lib'))
+    }
+}
+
+dependencies {
+
+    implementation project(':api-marvel')
+
+    compile 'io.vertx:vertx-web:3.5.1'
+
+    runtimeOnly project(':marvel-local-impl')
+
+}

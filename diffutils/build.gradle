@@ -2,3 +2,4 @@ plugins {
     id 'java-library'
 }
 
+ext.moduleName = "me.xdrop.diffutils"
