@@ -1,7 +1,0 @@
-me/xdrop/diffutils/DiffUtils$1.class
-me/xdrop/diffutils/DiffUtils.class
-module-info.class
-me/xdrop/diffutils/structs/EditOp.class
-me/xdrop/diffutils/structs/OpCode.class
-me/xdrop/diffutils/structs/MatchingBlock.class
-me/xdrop/diffutils/structs/EditType.class

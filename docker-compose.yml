@@ -1,0 +1,8 @@
+version: '3.0'
+services:
+  marvel:
+    image: marvel/marvel-http-server:1.0-SNAPSHOT
+    container_name: marvel-http
+    hostname: marvel-http
+    ports:
+      - 8080:8080
