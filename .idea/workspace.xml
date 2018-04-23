@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="409ff620-81de-49bd-95ba-30ed768804f7" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitbook.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/api-marvel/build.gradle" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/api-marvel/src/main/java/module-info.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/api-marvel/src/main/java/org/zenika/handson/jigsaw/api/CharactersApi.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/api-marvel/src/main/java/org/zenika/handson/jigsaw/api/MarvelCharacter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/book.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/diffutils/build.gradle" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/diffutils/src/main/java/me/xdrop/diffutils/DiffUtils.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/diffutils/src/main/java/me/xdrop/diffutils/structs/EditOp.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/diffutils/src/main/java/me/xdrop/diffutils/structs/EditType.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/diffutils/src/main/java/me/xdrop/diffutils/structs/MatchingBlock.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/diffutils/src/main/java/me/xdrop/diffutils/structs/OpCode.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/diffutils/src/main/java/module-info.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/CHAPTER_1.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/CHAPTER_2.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/CHAPTER_3.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/CHAPTER_4.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/CHAPTER_5.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/SUMMARY.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/TIPS.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/dependency-graph.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/idea_module_tips.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/fuzzywuzzy/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/fuzzywuzzy/build.gradle" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/fuzzywuzzy/src/main/java/me/xdrop/fuzzywuzzy/Applicable.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/fuzzywuzzy/src/main/java/me/xdrop/fuzzywuzzy/Extractor.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/fuzzywuzzy/src/main/java/me/xdrop/fuzzywuzzy/FuzzySearch.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/fuzzywuzzy/src/main/java/me/xdrop/fuzzywuzzy/Ratio.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/fuzzywuzzy/src/main/java/me/xdrop/fuzzywuzzy/StringProcessor.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/fuzzywuzzy/src/main/java/me/xdrop/fuzzywuzzy/algorithms/BasicAlgorithm.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/fuzzywuzzy/src/main/java/me/xdrop/fuzzywuzzy/algorithms/DefaultStringProcessor.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/fuzzywuzzy/src/main/java/me/xdrop/fuzzywuzzy/algorithms/NoProcess.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/fuzzywuzzy/src/main/java/me/xdrop/fuzzywuzzy/algorithms/PrimitiveUtils.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/fuzzywuzzy/src/main/java/me/xdrop/fuzzywuzzy/algorithms/RatioAlgorithm.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/fuzzywuzzy/src/main/java/me/xdrop/fuzzywuzzy/algorithms/SetUtils.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/fuzzywuzzy/src/main/java/me/xdrop/fuzzywuzzy/algorithms/TokenSet.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/fuzzywuzzy/src/main/java/me/xdrop/fuzzywuzzy/algorithms/TokenSort.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/fuzzywuzzy/src/main/java/me/xdrop/fuzzywuzzy/algorithms/Utils.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/fuzzywuzzy/src/main/java/me/xdrop/fuzzywuzzy/algorithms/WeightedRatio.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/fuzzywuzzy/src/main/java/me/xdrop/fuzzywuzzy/model/ExtractedResult.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/fuzzywuzzy/src/main/java/me/xdrop/fuzzywuzzy/ratios/PartialRatio.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/fuzzywuzzy/src/main/java/me/xdrop/fuzzywuzzy/ratios/SimpleRatio.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/fuzzywuzzy/src/main/java/module-info.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/gradlew" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-http-server/build.gradle" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-http-server/src/main/java/module-info.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-http-server/src/main/java/org/zenika/handson/jigsaw/http/Application.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-http-server/src/main/resources/logging.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-http-server/src/main/resources/webapp/cover.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-http-server/src/main/resources/webapp/css/app.a53706fb.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-http-server/src/main/resources/webapp/devoxx.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-http-server/src/main/resources/webapp/favicon.ico" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-http-server/src/main/resources/webapp/fonts/FeVQS0BTqb0h60ACH55Q2A.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-http-server/src/main/resources/webapp/fonts/FeVQS0BTqb0h60ACH5BQ2Ixi.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-http-server/src/main/resources/webapp/fonts/FeVQS0BTqb0h60ACH5FQ2Ixi.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-http-server/src/main/resources/webapp/fonts/banger-font.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-http-server/src/main/resources/webapp/img/SHIELD.66a2bdf4.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-http-server/src/main/resources/webapp/img/icons/android-chrome-192x192.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-http-server/src/main/resources/webapp/img/icons/android-chrome-512x512.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-http-server/src/main/resources/webapp/img/icons/apple-touch-icon-120x120.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-http-server/src/main/resources/webapp/img/icons/apple-touch-icon-152x152.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-http-server/src/main/resources/webapp/img/icons/apple-touch-icon-180x180.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-http-server/src/main/resources/webapp/img/icons/apple-touch-icon-60x60.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-http-server/src/main/resources/webapp/img/icons/apple-touch-icon-76x76.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-http-server/src/main/resources/webapp/img/icons/apple-touch-icon.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-http-server/src/main/resources/webapp/img/icons/favicon-16x16.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-http-server/src/main/resources/webapp/img/icons/favicon-32x32.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-http-server/src/main/resources/webapp/img/icons/msapplication-icon-144x144.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-http-server/src/main/resources/webapp/img/icons/mstile-150x150.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-http-server/src/main/resources/webapp/img/icons/safari-pinned-tab.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-http-server/src/main/resources/webapp/img/wolverine.1e7ee735.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-http-server/src/main/resources/webapp/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-http-server/src/main/resources/webapp/js/app.d61fdf2f.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-http-server/src/main/resources/webapp/js/app.d61fdf2f.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-http-server/src/main/resources/webapp/js/manifest.ce28c628.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-http-server/src/main/resources/webapp/js/vendor.452af325.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-http-server/src/main/resources/webapp/js/vendor.452af325.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-http-server/src/main/resources/webapp/logo.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-http-server/src/main/resources/webapp/manifest.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-http-server/src/main/resources/webapp/precache-manifest.ce997c44437816357d726c9aeec1ea3a.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-http-server/src/main/resources/webapp/service-worker.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-http-server/src/main/resources/webapp/zenika.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-http-server/src/test/java/org/zenika/handson/jigsaw/http/ApplicationTest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/build.gradle" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/java/img/PlaceHolder.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/java/module-info.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/java/org/zenika/handson/jigsaw/api/local/impl/InMemoryCharactersApi.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/META-INF/services/org.zenika.handson.jigsaw.api.CharactersApi" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/data/all.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c002e0305708_standard_xlarge.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c002e2a04c75_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c002e3aaf52e_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c002e50c1a87_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c002e541867f_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c002e5d2432b_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c002ee7bf3f5_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c002ef63d1e4_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c002f048e0b6_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c002f076451c_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c002f27b9a1e_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c002f2a83a8c_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c002f38d0e05_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c002f3b92276_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c002f3ec91c0_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c002f4445ce5_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c002f471444a_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c002f4a15c1c_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c0030a8ec05b_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c0030cbcba98_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c0030df47ab2_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c0030fd08ad6_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c00310b887bc_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c00322a3173c_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c00322ddea0c_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c003235e6f1d_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c0032410b8d8_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c0032463bef2_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c00325af279c_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c003266ccbab_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c0032802a24d_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c003291616a1_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c00329438aa0_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c00329c0dc23_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c0032a211f54_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c0032a542533_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c0032a9477bc_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c0033d9d26de_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c00359222ceb_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c0035a250615_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c0035a51844b_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c0035a7dd04d_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c0035b922e12_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c0035bc1dcf1_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c0035beb0c55_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c0035c193fc3_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c0035d87180e_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c0037366fae7_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c00373d10e5e_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c003740c9027_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c00375df1879_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c0037640501a_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c00377144d5a_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c0038c68a450_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c0038d27694a_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c0038d51109f_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c0038da16738_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c00390aa2403_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c003937c9ba4_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c00393a4cb7c_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c00393d65a55_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c00394059727_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c003a687658c_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c003a6b5d11a_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c003a6e38300_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c003a73b6673_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c003a7929d28_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c003a7f39967_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c003a81cef50_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c003a847f5d2_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c003a91d4fe1_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c003a94e668a_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c003a981c496_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c003a9db2f77_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c003aa0d9cf9_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c003aa43b1ec_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c003ab716add_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c003abcc72e7_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c003ac5e5195_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c003ac98d3ce_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c003acc72680_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c003acf4e4bc_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c003ad20ab78_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c003ad4d2e8d_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c003ad84f314_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c003adccbe4f_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c003ae37eccd_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c003ae66139c_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c003c0ce4a43_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c003c0fc6a28_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c003c13058bd_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c003c19078c3_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c003c1bbf29f_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c003c1e9a90e_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c003c21cd9e1_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c003c24b9222_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c003c337aff5_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c00407752be2_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c7c641408c12_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c7c64195cbb9_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4c7c643e59215_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4ce18691cbf04_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4ce18a92c7a50_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4ce5a16fd4182_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4ce5a1a50e56b_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4ce5a1efc3b2c_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4ce5a205a2322_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4ce5a21096f17_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4ce5a25d34245_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4ce5a2e831d0c_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4ce5a4c2cd41b_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4ce5a61df19e5_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4ce5a6abaea69_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4ced5ab9078c9_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4d2b364a69f77_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4d3f3b2078758_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4da612d77cbd0_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/4e7a2165364ca_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/50febb79985ee_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/50febc4f55525_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/50febd8be6b5d_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/50fec1e49298a_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/50fec50a26dc1_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/50fec5ed6f3de_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/5102c774ebae7_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/510c08f345938_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/5111505fb7009_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/5111527040594_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/51b164658335a_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/5202887448860_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/5232027069e61_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/523214a2abcb4_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/523214b8ea2cf_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/523214eac3705_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/5232153150e10_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/5232158de5b16_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/523215acd4a50_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/5232171a451bb_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/52321751dffa6_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/52321764379a9_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/523217e5c9327_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/52321806b45cf_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/5232190d42df2_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/52321928eaa72_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/52321948a51f2_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/523219743a99b_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/5232198a81c17_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/523219b086a17_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/523219c347dd1_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/5245ef8c83126_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/52602f21f29ec_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/526035de08b23_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/526035f38cd5d_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/526165a98dd8e_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/5261a838e93c0_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/5265479097743_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/526548a343e4b_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/526957a91a469_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/526957bb909b3_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/526957cdcf6d1_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/526957dc0c27f_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/52695b1392c78_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/5269615681f91_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/526963dad214d_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/5269657a74350_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/5269668c7d5df_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/52740e24bddb4_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/5274135912e8d_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/5274137e3e2cd_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/5274138fe6deb_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/527413a2480b5_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/527413b06270b_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/527413be6077d_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/527bb4d36b5c2_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/527bb5d64599e_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/527bb6490a176_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/527bb6fc4ec43_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/527bb7b37ff55_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/528d33d000749_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/528d3602d37e0_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/528d36110a1b9_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/528d3629c2a91_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/528d3638185cb_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/528d3655b9f06_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/528d367108dfb_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/528d367cdee38_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/528d36b054844_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/528d36c261af4_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/52b0d1eb0ca73_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/5317718f0a2e7_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/531771b4e8c60_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/531771c2ab020_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/531772716d0ac_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/5317732bcc91a_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/5317733a7ab7a_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/5317738e6dc12_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/531773a2ac20a_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/531773a976816_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/531773b76840c_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/535feaf1a92ef_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/535febd73f84f_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/535febe8b095a_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/535febf826de5_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/535fec953eaab_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/535fed8a3a00f_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/535fedbaaf234_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/535fedd611db9_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/535ff36a8fbef_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/535ff38904fff_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/535ff3a373ec3_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/535ff3b116209_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/535ff6c2ee685_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/536165c7d94ae_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/53629b9e24ef5_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/53629baa391c6_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/537ba56d31087_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/537bc55e8b1f5_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/537bcaef0f6cf_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/537bcfa1eed73_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/538615ca33ab0_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/5390dfd5ef165_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/5398a8a4b8ca9_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/53ad8faa127fa_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/545a820a2dc50_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/545a84a75ddaf_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/545a857a38f92_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/548730dac2a40_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/main/resources/img/9c5f9a894bfe0_standard_xlarge.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/marvel-local-impl/src/test/java/org/zenika/handson/jigsaw/api/local/impl/InMemoryCharactersApiTest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" afterPath="" />
+    </list>
+    <ignored path="$PROJECT_DIR$/diffutils/target/" />
+    <ignored path="$PROJECT_DIR$/fuzzywuzzy/target/" />
+    <ignored path="$PROJECT_DIR$/api-marvel/target/" />
+    <ignored path="$PROJECT_DIR$/marvel-local-impl/target/" />
+    <ignored path="$PROJECT_DIR$/marvel-http-server/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="Application.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/marvel-http-server/src/main/java/org/zenika/handson/jigsaw/http/Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="32" column="13" lean-forward="false" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../hands-on-jigsaw-devoxx" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="964" />
+    <option name="y" value="10" />
+    <option name="width" value="952" />
+    <option name="height" value="1066" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="jigsaw-hands-on" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hands-on-jigsaw" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="409ff620-81de-49bd-95ba-30ed768804f7" name="Default" comment="" />
+      <created>1524512162912</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1524512162912</updated>
+      <workItem from="1524512164086" duration="22000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="22000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="964" y="10" width="952" height="1066" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Key Promoter X" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/marvel-http-server/src/main/java/org/zenika/handson/jigsaw/http/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="32" column="13" lean-forward="false" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

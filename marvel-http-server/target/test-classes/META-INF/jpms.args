@@ -1,0 +1,4 @@
+--patch-module
+org.zenika.handson.jigsaw.http=_
+--add-reads
+org.zenika.handson.jigsaw.http=ALL-UNNAMED
