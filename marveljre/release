@@ -1,2 +1,0 @@
-JAVA_VERSION="10.0.1"
-MODULES="java.base java.logging jdk.httpserver me.xdrop.diffutils me.xdrop.fuzzywuzzy org.zenika.handson.jigsaw.api org.zenika.handson.jigsaw.api.local.impl org.zenika.handson.jigsaw.http"
