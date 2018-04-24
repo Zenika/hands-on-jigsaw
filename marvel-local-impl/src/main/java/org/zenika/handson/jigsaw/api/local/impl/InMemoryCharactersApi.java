@@ -40,7 +40,7 @@ public class InMemoryCharactersApi implements CharactersApi {
     // curl & jq & bash have super power too
     private static Map<Integer, MarvelCharacter> loadDataFromFile() {
 
-        try (InputStream is = InMemoryCharactersApi.class.getModule().getResourceAsStream("data/all.txt");
+        try (InputStream is = InMemoryCharactersApi.class.getClassLoader().getResourceAsStream("data/all.txt");
              InputStreamReader isr = new InputStreamReader(is);
              BufferedReader br = new BufferedReader(isr)) {
             return br.lines().map(lineToCharacter).collect(Collectors.toMap(c -> c.id, c -> c));
@@ -119,14 +119,11 @@ public class InMemoryCharactersApi implements CharactersApi {
 
             switch (type) {
                 case LARGE:
-//                    return this.getClass().getClassLoader().getResource("img/".concat(imageId).concat(".").concat(extension));
-                    return img.PlaceHolder.class.getModule().getClassLoader().getResource("img/".concat(imageId).concat(".").concat(extension));
+                    return this.getClass().getClassLoader().getResource("img/".concat(imageId).concat(".").concat(extension));
                 case PORTRAIT_XLARGE:
-//                    return this.getClass().getClassLoader().getResource("img/".concat(imageId).concat("_portrait_xlarge.").concat(extension));
-                    return img.PlaceHolder.class.getModule().getClassLoader().getResource("img/".concat(imageId).concat("_portrait_xlarge.").concat(extension));
+                    return this.getClass().getClassLoader().getResource("img/".concat(imageId).concat("_portrait_xlarge.").concat(extension));
                 case STANDARD_XLARGE:
-//                    return this.getClass().getClassLoader().getResource("img/".concat(imageId).concat("_standard_xlarge.").concat(extension));
-                    return img.PlaceHolder.class.getModule().getClassLoader().getResource("img/".concat(imageId).concat("_standard_xlarge.").concat(extension));
+                    return this.getClass().getClassLoader().getResource("img/".concat(imageId).concat("_standard_xlarge.").concat(extension));
                 default:
                     // should not arrive
                     throw new DoctorStrangeException("Strange, this type of image is not supported");

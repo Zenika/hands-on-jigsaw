@@ -10,13 +10,11 @@ import org.zenika.handson.jigsaw.api.CharactersApi;
 import org.zenika.handson.jigsaw.api.MarvelCharacter;
 
 import java.io.File;
-import java.lang.invoke.MethodHandles;
 import java.util.List;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
-import static org.junit.jupiter.api.condition.JRE.JAVA_10;
-import static org.junit.jupiter.api.condition.JRE.JAVA_9;
+import static org.junit.jupiter.api.condition.JRE.*;
 
 
 public class InMemoryCharactersApiTest {
@@ -81,8 +79,7 @@ public class InMemoryCharactersApiTest {
     @DisplayName("Dynamic invoke on object that is not open to this module should throw an IllegalAccessException")
     public void shouldFailToFindClassWithJigsaw() {
         assertThrows(IllegalAccessException.class, () -> {
-            MethodHandles.Lookup lookup = MethodHandles.lookup();
-            lookup.findClass("java.sql.Timestamp");
+            Class.forName("java.sql.Timestamp");
         });
 
     }
@@ -91,8 +88,7 @@ public class InMemoryCharactersApiTest {
     @DisabledIfEnvironmentVariable(named = "MARVEL", matches = "JIGSAW")
     @DisplayName("With classpath you could dynamic invoke what you want")
     public void shouldFindClassWithJava8() throws IllegalAccessException, ClassNotFoundException {
-        MethodHandles.Lookup lookup = MethodHandles.lookup();
-        assertNotNull(lookup.findClass("java.sql.Timestamp"));
+        assertNotNull(Class.forName("java.sql.Timestamp"));
 
     }
 
