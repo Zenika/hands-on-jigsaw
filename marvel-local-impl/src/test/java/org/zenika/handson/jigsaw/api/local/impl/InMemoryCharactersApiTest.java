@@ -93,7 +93,6 @@ public class InMemoryCharactersApiTest {
     public void shouldFindClassWithJava8() throws IllegalAccessException, ClassNotFoundException {
         MethodHandles.Lookup lookup = MethodHandles.lookup();
         assertNotNull(lookup.findClass("java.sql.Timestamp"));
-
     }
 
 
