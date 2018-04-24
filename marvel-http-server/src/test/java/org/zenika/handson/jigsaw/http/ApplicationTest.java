@@ -84,7 +84,7 @@ class ApplicationTest {
 
     @Test
     @EnabledOnJre({JRE.JAVA_9, JRE.JAVA_10})
-    @EnabledIfEnvironmentVariable(named = "HTTP", matches = "JIGSAW")
+    @EnabledIfEnvironmentVariable(named = "ENV", matches = "GRADLE")
     // Enable only with real module cmdline (not Idea which using classpath on test)
     @DisplayName("With JIGSAW this module should be \"org.zenika.handson.jigsaw.http\"")
     void infoModuleNameShouldBeOrgZenikaHandsonJigsawHttp() {
