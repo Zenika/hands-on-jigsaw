@@ -45,6 +45,11 @@
                         <version>${junit.platform.version}</version>
                     </dependency>
                     </dependencies>
+                    <configuration>
+                        <environmentVariables>
+                            <MARVEL>CLASSPATH</MARVEL>
+                        </environmentVariables>
+                    </configuration>
                 </plugin>
             </plugins>
         </pluginManagement>
